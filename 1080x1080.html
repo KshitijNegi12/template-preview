@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce Wireframe v2</title>
+    <title>E-commerce Wireframe v12</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,8 @@
             width: 625px;
             height: 400px;
             margin: 0;
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
         
         /* Header */
@@ -106,6 +107,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 8px;
+            margin-bottom: 8px;
         }
         
         .product-box {
@@ -139,6 +141,27 @@
             color: #666;
             margin: 8px 0;
             font-size: 8px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        
+        .footer-sections {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            width: 60px;
+            height: 40px;
+            background-color: #37475a;
+            border: 1px dashed #666;
         }
         
         /* Highlighted Ad */
@@ -196,6 +219,16 @@
             </div>
             
             <div class="sidebar-section"></div>
+            
+            <!-- Additional Sidebar Ad -->
+            <div class="ad-sidebar" style="width: 120px; height: 100px;">
+                <div style="text-align: center;">
+                    <div class="ad-label">IAB Ad</div>
+                    300x250
+                </div>
+            </div>
+            
+            <div class="sidebar-section"></div>
         </aside>
         
         <!-- Main Content -->
@@ -223,7 +256,49 @@
                     Native Position
                 </div>
             </div>
+            
+            <!-- Product Grid Row 2 -->
+            <div class="product-grid">
+                <div class="product-box">
+                    <div class="product-image"></div>
+                    <div class="product-info"></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-image"></div>
+                    <div class="product-info"></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-image"></div>
+                    <div class="product-info"></div>
+                </div>
+            </div>
+            
+            <!-- Product Grid Row 3 -->
+            <div class="product-grid">
+                <div class="product-box">
+                    <div class="product-image"></div>
+                    <div class="product-info"></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-image"></div>
+                    <div class="product-info"></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-image"></div>
+                    <div class="product-info"></div>
+                </div>
+            </div>
         </main>
     </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-sections">
+            <div class="footer-section"></div>
+            <div class="footer-section"></div>
+            <div class="footer-section"></div>
+            <div class="footer-section"></div>
+        </div>
+    </footer>
 </body>
 </html>
