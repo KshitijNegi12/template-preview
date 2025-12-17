@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var clickTag = "{{LANDING_PAGE_URL}}";
+        </script>
+        <script
+            type="text/javascript"
+            src="https://s.adx.io/html5/v1/dxstream.min.js"
+        ></script>
+    </head>
+    <body>
+        <div id="adContainer">
+            <a href="javascript:window.open(clickTag,'_blank')">
+                <div id="imageSection">
+                    <img
+                        id="productImage"
+                        src="{{PRODUCT_IMAGE}}"
+                        alt="Product"
+                    />
+                </div>
+                <div id="contentSection">
+                    <h2 id="headline">{{HEADLINE}}</h2>
+                    <p id="description">{{DESCRIPTION}}</p>
+                    <button id="ctaButton">{{CTA_TEXT}}</button>
+                </div>
+            </a>
+        </div>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                width: 970px;
+                height: 250px;
+                overflow: hidden;
+                font-family: Arial, sans-serif;
+            }
+            #adContainer {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                background-color: #ffffff;
+                border: 1px solid #ddd;
+            }
+            #adContainer a {
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                width: 100%;
+                height: 100%;
+            }
+            #imageSection {
+                width: 400px;
+                height: 100%;
+            }
+            #productImage {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            #contentSection {
+                flex: 1;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #headline {
+                font-size: 32px;
+                font-weight: bold;
+                color: #2c3e50;
+                margin-bottom: 15px;
+            }
+            #description {
+                font-size: 16px;
+                color: #7f8c8d;
+                margin-bottom: 25px;
+                line-height: 1.5;
+            }
+            #ctaButton {
+                background-color: #3498db;
+                color: white;
+                border: none;
+                padding: 12px 30px;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                align-self: flex-start;
+                transition: background-color 0.3s;
+            }
+            #ctaButton:hover {
+                background-color: #2980b9;
+            }
+        </style>
+    </body>
+</html>
